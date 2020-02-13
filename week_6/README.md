@@ -12,7 +12,7 @@ Many embedded systems run *event loops*, which are essentially endless while loo
 
 In fact, I have seen event loops in which thousands of lines of sequential code was put inside `main()` in a while loop. While such an arrangement may be acceptable for small projects, big projects with many contributors need more structure.
 
-Starting this week, then, we will be building an Event Loop MAnager called *elma*, which includes (or will include), support for:
+Starting this week, then, we will be building an Event Loop Manager called *elma*, which includes (or will include), support for:
 - Defining modular processes
 - Scheduling a process to run at a desired frequency
 - Communicating among processes with *channels*
@@ -38,7 +38,7 @@ An example project using elma can be found here: [https://github.com/klavinslab/
 Overview
 ===
 
-Before we delve into the details of how *elma* works, here is an example of how to use *elma* to define a simple cruse control class. First, we define a new process.
+Before we delve into the details of how *elma* works, here is an example of how to use *elma* to define a simple cruise control class. First, we define a new process.
 ```c++
   class CruiseControl : public elma::Process {
     public:
